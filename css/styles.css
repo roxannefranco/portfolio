@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+:root {
+  /* white mode */
+  --light-lilac: #efebf3;
+  --lilac: #b082de;
+  --titlefont: "Playfair Display", serif;
+  --textfont: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.center-content {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: fixed;
+}
+
+body {
+  font-family: var(--textfont);
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.main-title {
+  font-family: var(--titlefont);
+  font-size: 50px;
+}
+
+h1 span {
+  color: var(--lilac);
+}
