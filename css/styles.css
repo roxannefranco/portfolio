@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 :root {
-  /* white mode */
+  /* day mode */
   --light-lilac: #efebf3;
   --lilac: #b082de;
+  --grey: #6a6a6a;
   --titlefont: "Playfair Display", serif;
   --textfont: "Inter", sans-serif;
 }
@@ -18,7 +19,7 @@
   max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: calc(100% - 40px);
 }
 
 nav {
@@ -26,23 +27,157 @@ nav {
 }
 
 .nav-bar {
-  margin-top: 20px;
+  background-color: white;
   margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-body {
-  font-family: var(--textfont);
-  margin: 0;
-  padding: 0;
-  color: black;
+.menu {
+  margin-left: auto;
 }
 
-.main-title {
+.welcome-text h1 {
   font-family: var(--titlefont);
   font-size: 50px;
 }
 
+.main-title {
+  font-family: var(--titlefont);
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.text {
+  font-family: var(--textfont);
+  line-height: 22px;
+  font-size: 14px;
+}
+
 h1 span {
+  color: var(--lilac);
+}
+
+.background-day {
+  background-color: var(--light-lilac);
+  padding-top: 30px;
+}
+
+.welcome-text h2 {
+  font-size: 40px;
+  font-family: var(--titlefont);
+}
+
+.welcome-text {
+  margin-top: 180px;
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 150px;
+  margin-top: 80px;
+  max-width: 100%;
+}
+
+.icon-scroll {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 180px;
+}
+
+.intro-title {
+  font-family: var(--titlefont);
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.projects-intro {
+  background-color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.projects-container {
+  background-color: white;
+}
+
+.single-project {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.single-project h2 {
+  padding-top: 50px;
+}
+
+.project-text p {
+  margin-right: 60px;
+}
+
+.cta {
+  font-family: var(--textfont);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  border: solid 1px var(--lilac);
+  background-color: var(--lilac);
+  color: white;
+  cursor: pointer;
+}
+
+.icon {
+  padding: 6.5px;
+  margin-left: 5px;
+}
+
+.cta:hover {
+  border: solid 1px --lilac;
+  background-color: white;
+  color: var(--lilac);
+}
+
+.cta:hover svg path {
+  fill: var(--lilac);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons a {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.contacts-section {
+  background-color: var(--light-lilac);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.buttons-contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer p {
+  padding: 20px;
+  text-align: center;
+  color: var(--grey);
+}
+
+footer span {
   color: var(--lilac);
 }
