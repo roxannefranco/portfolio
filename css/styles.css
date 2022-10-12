@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 :root {
-  /* day mode */
-  --light-lilac: #efebf3;
+  --section-bg: #2f2a33;
   --lilac: #b082de;
-  --grey: #6a6a6a;
+  --bg: #3e3943;
+  --text: white;
+  --grey: white;
   --titlefont: "Playfair Display", serif;
   --textfont: "Inter", sans-serif;
 }
@@ -13,6 +14,27 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+body.light {
+  --section-bg: #efebf3;
+  --lilac: #b082de;
+  --bg: white;
+  --text: black;
+  --grey: #6a6a6a;
+}
+
+body.light .sun {
+  display: none;
+}
+
+body:not(.light) .moon {
+  display: none;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
 }
 
 .center-content {
@@ -24,10 +46,11 @@
 
 nav {
   display: flex;
+  align-items: center;
 }
 
 .nav-bar {
-  background-color: white;
+  background-color: var(--bg);
   margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -37,8 +60,35 @@ nav {
   right: 0;
 }
 
+.logo {
+  display: inline-block;
+  max-height: 25px;
+}
+
+.dinamic-vector {
+  fill: var(--text);
+}
+
 .menu {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+#switch-btn,
+#hamburguer {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#hamburguer {
+  margin-left: 10px;
+}
+
+#switch-btn:hover,
+#hamburguer:hover {
+  opacity: 0.5;
 }
 
 .welcome-text h1 {
@@ -63,7 +113,7 @@ h1 span {
 }
 
 .background-day {
-  background-color: var(--light-lilac);
+  background-color: var(--section-bg);
   padding-top: 30px;
 }
 
@@ -98,14 +148,14 @@ h1 span {
 }
 
 .projects-intro {
-  background-color: white;
+  background-color: var(--bg);
   text-align: center;
   padding-top: 50px;
   padding-bottom: 70px;
 }
 
 .projects-container {
-  background-color: white;
+  background-color: var(--bg);
 }
 
 .single-project {
@@ -141,7 +191,7 @@ h1 span {
 
 .cta:hover {
   border: solid 1px --lilac;
-  background-color: white;
+  background-color: var(--bg);
   color: var(--lilac);
 }
 
@@ -160,7 +210,7 @@ h1 span {
 }
 
 .contacts-section {
-  background-color: var(--light-lilac);
+  background-color: var(--section-bg);
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
