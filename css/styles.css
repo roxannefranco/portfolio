@@ -91,6 +91,19 @@ nav {
   opacity: 0.5;
 }
 
+.hidden-menu {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  position: fixed;
+  background: white;
+  padding-top: 60px;
+}
+
 .welcome-text h1 {
   font-family: var(--titlefont);
   font-size: 50px;
@@ -231,3 +244,6 @@ footer p {
 footer span {
   color: var(--lilac);
 }
+/* RESPONSIVE RULES 
+@media only screen and (max-width: 800px) {
+}*/
