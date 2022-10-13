@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
 :root {
   --section-bg: #2f2a33;
@@ -9,6 +10,7 @@
   --grey: white;
   --titlefont: "Playfair Display", serif;
   --textfont: "Inter", sans-serif;
+  --hoverfont: "Caveat", cursive;
 }
 
 * {
@@ -70,16 +72,22 @@ nav {
 }
 
 .menu {
+  color: var(--text);
   margin-left: auto;
   display: flex;
   align-items: center;
 }
 
 #switch-btn,
-#hamburguer {
+#hamburguer,
+#close {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+}
+
+#close {
+  display: inline-block;
 }
 
 #hamburguer {
@@ -87,7 +95,8 @@ nav {
 }
 
 #switch-btn:hover,
-#hamburguer:hover {
+#hamburguer:hover,
+#close:hover {
   opacity: 0.5;
 }
 
@@ -98,10 +107,44 @@ nav {
   right: 0;
   text-align: center;
   text-decoration: none;
+
   z-index: 1;
   position: fixed;
   background: white;
-  padding-top: 60px;
+  display: none;
+  background-color: var(--section-bg);
+  color: var(--textfont);
+}
+
+.hidden-menu ul {
+  font-size: 40px;
+  font-family: var(--textfont);
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.hidden-menu li {
+  padding-bottom: 20px;
+}
+
+.hidden-menu a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.hidden-menu a:hover {
+  font-family: var(--hoverfont);
+  color: var(--lilac);
+  text-transform: none;
+}
+
+#close {
+  margin-left: auto;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 .welcome-text h1 {
