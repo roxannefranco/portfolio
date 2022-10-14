@@ -319,6 +319,32 @@ footer span {
   color: var(--lilac);
 }
 
+/*animated scroll icon*/
+
+svg .top {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: topAnimation 1s ease-in-out infinite;
+  animation-delay: 150ms;
+}
+
+svg .bottom {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: topAnimation 1s ease-in-out infinite;
+}
+
+@keyframes topAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* RESPONSIVE RULES */
 
 @media only screen and (max-width: 1050px) {
