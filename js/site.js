@@ -16,16 +16,25 @@ switchBtn.onclick = () => {
 const openButton = document.querySelector("#hamburguer");
 const closeButton = document.querySelector("#close");
 const hiddenMenu = document.querySelector(".hidden-menu");
+const menuLinks = document.querySelectorAll(".hidden-menu a");
+
 openButton.onclick = function () {
   hiddenMenu.style.display = "flex";
   closeButton.style.display = "block";
 };
 
 // close menu
-closeButton.onclick = function () {
+closeButton.onclick = closeMenu;
+
+function closeMenu() {
   hiddenMenu.style.display = "none";
   closeButton.style.display = "none";
-};
+}
+
+// close menu each time a link is clicked
+menuLinks.forEach(function (menuLink) {
+  menuLink.onclick = closeMenu;
+});
 
 // importing array with list of projects
 import { projects } from "./projectsList.js";
