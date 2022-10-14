@@ -7,6 +7,7 @@
   --lilac: #b082de;
   --bg: #3e3943;
   --text: white;
+  --textcolor: #c4bdce;
   --titlefont: "Playfair Display", serif;
   --textfont: "Inter", sans-serif;
   --hoverfont: "Caveat", cursive;
@@ -26,6 +27,7 @@ body.light {
   --lilac: #b082de;
   --bg: white;
   --text: black;
+  --textcolor: #6b6573;
   --grey: #6a6a6a;
 }
 
@@ -182,8 +184,10 @@ nav {
 
 .text {
   font-family: var(--textfont);
+  font-weight: 300;
   line-height: 22px;
   font-size: 14px;
+  color: var(--textcolor);
 }
 
 h1 span {
@@ -218,7 +222,7 @@ h1 span {
 .projects-intro {
   background-color: var(--bg);
   text-align: center;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 70px;
   margin-left: 20px;
   margin-right: 20px;

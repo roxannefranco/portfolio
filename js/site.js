@@ -1,14 +1,26 @@
 const switchBtn = document.querySelector("#switch-btn");
 const body = document.querySelector("body");
 
+// check which mode on local storage
+const mode = localStorage.getItem("mode");
+if (mode === "light") {
+  body.classList.add("light");
+}
+
+if (mode === "dark") {
+  body.classList.remove("light");
+}
+
 // switch between light and dark mode
 switchBtn.onclick = () => {
   if (body.classList.contains("light")) {
     // body contains class light then removes
     body.classList.remove("light");
+    localStorage.setItem("mode", "dark");
   } else {
     // body does not contain class light then adds
     body.classList.add("light");
+    localStorage.setItem("mode", "light");
   }
 };
 
