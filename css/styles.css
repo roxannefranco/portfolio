@@ -230,7 +230,7 @@ h1 span {
 
 .single-project {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .single-project img {
@@ -289,8 +289,8 @@ h1 span {
 .contacts-section {
   background-color: var(--section-bg);
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 70px;
+  padding-bottom: 80px;
 }
 
 .contact-text {
@@ -329,6 +329,10 @@ footer span {
 @media only screen and (max-width: 902px) {
   .single-project {
     flex-direction: column-reverse;
+  }
+
+  .main-title {
+    padding-top: 20px;
   }
 
   .project-text {
