@@ -11,7 +11,7 @@ export const projects = [
   {
     name: "Community Science Museum",
     description:
-      "A Science Museum recently opened with a diverse range of interactive exhibits for a core target audience that is inquisitive and intelligent primary and middle school children (ages between 7-15) and families with young children. The website is aimed to be informative and appealing. All exhibits were a criation for this project. Developed as my Semester Project as a student of Front-end Development at Noroff, this online store is meant to inform and appeal its users into booking tickets for the museum. It has a simple, clear and easy flow for a better user experience. At this point we were not yet using Javascript at the course.",
+      "Developed as my Semester Project as a student of Front-end Development at Noroff, this online store is meant to inform and appeal its users into booking tickets for the museum. It has a simple, clear and easy flow for a better user experience. At this point we were not yet using Javascript at the course.",
     image: "images/museum-screens.png",
     link: "https://project-community-science-museum.netlify.app/",
     github: "https://github.com/roxannefranco/community-science-museum",

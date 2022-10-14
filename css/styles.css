@@ -177,7 +177,7 @@ nav {
 .main-title {
   font-family: var(--titlefont);
   font-size: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .text {
@@ -233,16 +233,15 @@ h1 span {
   margin-bottom: 50px;
 }
 
-.single-project h2 {
-  padding-top: 50px;
-}
-
 .single-project img {
   max-width: 453px;
   width: 100%;
 }
 
 .project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex: 1;
 }
 
@@ -284,7 +283,7 @@ h1 span {
 .buttons {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .contacts-section {
