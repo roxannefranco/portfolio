@@ -7,7 +7,6 @@
   --lilac: #b082de;
   --bg: #3e3943;
   --text: white;
-  --grey: white;
   --titlefont: "Playfair Display", serif;
   --textfont: "Inter", sans-serif;
   --hoverfont: "Caveat", cursive;
@@ -90,6 +89,10 @@ nav {
   display: inline-block;
 }
 
+#close svg path {
+  stroke: var(--text);
+}
+
 #hamburguer {
   margin-left: 10px;
 }
@@ -107,7 +110,6 @@ nav {
   right: 0;
   text-align: center;
   text-decoration: none;
-
   z-index: 1;
   position: fixed;
   background: white;
@@ -281,7 +283,7 @@ h1 span {
 footer p {
   padding: 20px;
   text-align: center;
-  color: var(--grey);
+  color: var(--text);
 }
 
 footer span {
