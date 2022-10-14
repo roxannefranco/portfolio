@@ -275,7 +275,7 @@ h1 span {
 }
 
 .cta:hover svg path {
-  stroke: var(--lilac);
+  fill: var(--lilac);
 }
 
 .buttons {
