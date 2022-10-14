@@ -109,6 +109,10 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   text-decoration: none;
   z-index: 1;
@@ -117,10 +121,7 @@ nav {
   display: none;
   background-color: var(--section-bg);
   color: var(--textfont);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  opacity: 0.98;
 }
 
 .hidden-menu ul {
@@ -157,6 +158,13 @@ nav {
   right: 30px;
 }
 
+.welcome-text {
+  margin-top: 180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
 .welcome-text h1 {
   font-family: var(--titlefont);
   font-size: 50px;
@@ -181,16 +189,6 @@ h1 span {
 .background-day {
   background-color: var(--section-bg);
   padding-top: 30px;
-}
-
-.welcome-text h2 {
-  font-size: 40px;
-  font-family: var(--titlefont);
-}
-
-.welcome-text {
-  margin-top: 180px;
-  text-align: center;
 }
 
 .profile-pic {
@@ -218,6 +216,8 @@ h1 span {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .projects-container {
@@ -231,6 +231,15 @@ h1 span {
 
 .single-project h2 {
   padding-top: 50px;
+}
+
+.single-project img {
+  max-width: 453px;
+  width: 100%;
+}
+
+.project-text {
+  flex: 1;
 }
 
 .project-text p {
@@ -262,7 +271,7 @@ h1 span {
 }
 
 .cta:hover svg path {
-  fill: var(--lilac);
+  stroke: var(--lilac);
 }
 
 .buttons {
@@ -282,6 +291,11 @@ h1 span {
   padding-bottom: 30px;
 }
 
+.contact-text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .buttons-contact {
   display: flex;
   justify-content: center;
@@ -297,6 +311,25 @@ footer p {
 footer span {
   color: var(--lilac);
 }
-/* RESPONSIVE RULES 
-@media only screen and (max-width: 800px) {
-}*/
+
+/* RESPONSIVE RULES */
+
+@media only screen and (max-width: 1050px) {
+  .welcome-text h1 {
+    font-size: 40px;
+  }
+
+  .intro-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 902px) {
+  .single-project {
+    flex-direction: column-reverse;
+  }
+
+  .project-text {
+    flex: 0;
+  }
+}
