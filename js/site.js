@@ -17,7 +17,7 @@ const openButton = document.querySelector("#hamburguer");
 const closeButton = document.querySelector("#close");
 const hiddenMenu = document.querySelector(".hidden-menu");
 openButton.onclick = function () {
-  hiddenMenu.style.display = "block";
+  hiddenMenu.style.display = "flex";
   closeButton.style.display = "block";
 };
 
@@ -32,7 +32,6 @@ import { projects } from "./projectsList.js";
 console.log(projects);
 
 const projectsContainer = document.querySelector(".projects-container");
-
 projects.forEach(function (project) {
   projectsContainer.innerHTML += `
   <div class="single-project">

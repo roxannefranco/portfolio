@@ -75,6 +75,7 @@ nav {
   margin-left: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #switch-btn,
@@ -116,6 +117,10 @@ nav {
   display: none;
   background-color: var(--section-bg);
   color: var(--textfont);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hidden-menu ul {
@@ -147,6 +152,9 @@ nav {
   margin-left: auto;
   padding-right: 10px;
   padding-top: 10px;
+  position: fixed;
+  top: 5px;
+  right: 30px;
 }
 
 .welcome-text h1 {
