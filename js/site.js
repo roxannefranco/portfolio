@@ -50,7 +50,6 @@ menuLinks.forEach(function (menuLink) {
 
 // importing array with list of projects
 import { projects } from "./projectsList.js";
-console.log(projects);
 
 const projectsContainer = document.querySelector(".projects-container");
 projects.forEach(function (project) {
