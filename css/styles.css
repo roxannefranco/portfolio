@@ -256,7 +256,10 @@ h1 span {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
   border: solid 1px var(--lilac);
   background-color: var(--lilac);
   color: white;
@@ -264,7 +267,7 @@ h1 span {
 }
 
 .icon {
-  padding: 6.5px;
+  padding: 0 7px;
   margin-left: 5px;
 }
 
@@ -281,11 +284,7 @@ h1 span {
 .buttons {
   display: flex;
   align-items: center;
-}
-
-.buttons a {
   margin-top: 20px;
-  display: inline-block;
 }
 
 .contacts-section {
