@@ -20,7 +20,7 @@ export const projects = [
   {
     name: "MyBergen",
     description:
-      "MyBergen is a travel guide Blog with a Headless WordPress REST API to manage the website's posts. Developed as my 1st year Exam Project for Front-end Development at Noroff, there were the mandatory aspects to include in the project. (listed in my Github!)",
+      "MyBergen is a travel guide Blog with a Headless WordPress REST API to manage the website's posts. Developed as my 1st year Exam Project for Front-end Development at Noroff, there were some mandatory aspects to include in the project. (listed in my Github!)",
     image: "images/mybergen-screens.png",
     link: "https://mybergen.netlify.app/",
     github: "https://github.com/roxannefranco/mybergen/blob/main/README.md",
