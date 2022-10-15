@@ -71,7 +71,7 @@ projects.forEach(function (project) {
                 </div>
             </div>
             <div>
-              <img src="${project.image}">
+              <img src="${project.image}" alt="${project.image}">
             </div>
         </div>`;
 });
